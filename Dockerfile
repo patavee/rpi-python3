@@ -26,4 +26,7 @@ RUN apt-get update && \
     ./configure && \
     make && \
     make install && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* && \
+    rm -rf /python-install
+    
+WORKDIR /root
