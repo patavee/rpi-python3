@@ -26,8 +26,7 @@ RUN apt-get update && \
     ./configure && \
     make && \
     make install && \
-    alias python=python3 && \
-    alias pip=pip3 && \
+    printf 'alias python=python3\nalias pip=pip3\n' >> ~/.bashrc && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /python-install
     
