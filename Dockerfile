@@ -26,6 +26,8 @@ RUN apt-get update && \
     ./configure && \
     make && \
     make install && \
+    alias python=python3 && \
+    alias pip=pip3 && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /python-install
     
